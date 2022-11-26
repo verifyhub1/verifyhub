@@ -14,7 +14,7 @@ if mouse.Target.Parent:FindFirstChildOfClass("Humanoid") then
 local targetroot=mouse.Target.Parent.HumanoidRootPart
 cfval.Value=char.HumanoidRootPart.CFrame
 hold = runservice.RenderStepped:Connect(function()
-char:SetPrimaryPartCFrame(targetroot.CFrame + Vector3.new(0,-2,0))
+char:SetPrimaryPartCFrame(targetroot.CFrame + Vector3.new(0,-0.5,0))
 end)
 end
 end)
