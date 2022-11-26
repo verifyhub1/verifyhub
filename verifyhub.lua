@@ -1,5 +1,4 @@
 local Flux = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/fluxlib.txt")()
-Flux:Notification("Press left control to hide the UI!", "OK")
 local win = Flux:Window("verifyhub", game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name, Color3.fromRGB(0, 255, 0), Enum.KeyCode.LeftControl)
 local tab = win:Tab("Friendly", "http://www.roblox.com/asset/?id=6022668888")
 tab:Button("AlexVR", "Executes AlexVR, a fake vr script, controls can be seen inside the chat", function()
@@ -14,3 +13,4 @@ tab2:Button("Hold mouse to give penis", "Hold your mouse on someone to give them
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Alexplayrus2/verifyhub/main/penis.lua'))()
 Flux:Notification("Hold your mouse over a player to give them a penis, stop holding to remove it (oh no)", "ok lol")
 end)
+Flux:Notification("Press left control to hide the UI!", "OK")
