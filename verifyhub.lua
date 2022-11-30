@@ -13,7 +13,7 @@ tab2:Button("Hold mouse to give penis", "Hold your mouse on someone to give them
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Alexplayrus2/verifyhub/main/penis.lua'))()
 Flux:Notification("Hold your mouse over a player to give them a penis, stop holding to remove it (oh no)", "ok lol")
 end)
-local tab4 = win:Tab("Chat", "http://www.roblox.com/asset/?id=7164927421")
+local tab4 = win:Tab("Chat", "https://create.roblox.com/marketplace/asset/7164927421/")
 tab4:Label("Chat bypasses")
 tab4:Label("Its recommended that you use a short display name/username.")
 tab4:Button("Penis", "Chat an ascii of a penis", function()
