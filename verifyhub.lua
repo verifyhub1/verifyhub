@@ -13,17 +13,41 @@ tab2:Button("Hold mouse to give penis", "Hold your mouse on someone to give them
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Alexplayrus2/verifyhub/main/penis.lua'))()
 Flux:Notification("Hold your mouse over a player to give them a penis, stop holding to remove it (oh no)", "ok lol")
 end)
-local tab2 = win:Tab("Misc", "http://www.roblox.com/asset/?id=6023426915")
-tab2:Label("Hat color (CLIENT)")
-tab2:Label("Only you see the hat color. Other players see it as default")
-tab2:Colorpicker("Hat color (CLIENT)", Color3.fromRGB(163, 162, 165), function(t)
+local tab4 = win:Tab("Chat", "http://www.roblox.com/asset/?id=7164927421")
+tab4:Label("Chat bypasses")
+tab4:Label("Its recommended that you use a short display name/username.")
+tab4:Button("Penis", "Chat an ascii of a penis", function()
+    local args = {
+    [1] = "#",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+    local args = {
+    [1] = "########",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+    local args = {
+    [1] = "#",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+  end)
+local tab3 = win:Tab("Misc", "http://www.roblox.com/asset/?id=6023426915")
+tab3:Label("Hat color (CLIENT)")
+tab3:Label("Only you see the hat color. Other players see it as default")
+tab3:Colorpicker("Hat color (CLIENT)", Color3.fromRGB(163, 162, 165), function(t)
 for _,hat in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
 if hat:IsA("Accessory") then
 hat.Handle.Color=t
 end
 end
 end)
-tab2:Button("Reset to default", "Reset your hat color to default, if you have rainbow enabled then disable it for this to work", function()
+tab3:Button("Reset to default", "Reset your hat color to default, if you have rainbow enabled then disable it for this to work", function()
 for _,hat in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
 if hat:IsA("Accessory") then
 hat.Handle.Color=Color3.fromRGB(163, 162, 165)
