@@ -143,7 +143,6 @@ local args = {
 
 game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
         end)
-
 local tab3 = win:Tab("Misc", "http://www.roblox.com/asset/?id=6023426915")
 tab3:Label("Hat color (CLIENT)")
 tab3:Label("Only you see the hat color. Other players see it as default")
