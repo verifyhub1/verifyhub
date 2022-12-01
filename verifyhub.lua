@@ -145,7 +145,7 @@ game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageReque
         end)
 tab4:Label("Other")
 tab4:Button("Chat translator", "Translates the chat for you, check the chats messages for more info", function()
-        loadstring(game:HttpGetAsync('https://raw.githubusercontent.com/xxaim/ignore/master/translator.lua'))()
+        loadstring(game:HttpGetAsync('https://pastebin.com/raw/XGFdZ32R'))()
         end)
 local tab3 = win:Tab("Misc", "http://www.roblox.com/asset/?id=6023426915")
 tab3:Label("Hat color (CLIENT)")
