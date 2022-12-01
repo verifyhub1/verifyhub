@@ -37,7 +37,7 @@ game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageReque
 
 game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
   end)
-tab4:Button("Pissing man", "Chats an ascii of a man taking a piss" function()
+tab4:Button("Pissing man", "Chats an ascii of a man taking a piss", function()
         local args = {
     [1] = "##",
     [2] = "All"
@@ -69,7 +69,7 @@ local args = {
 game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
 
         end)
-tab4:Button("Letter P", "Chats an ascii of the letter P" function()
+tab4:Button("Letter P", "Chats an ascii of the letter P", function()
         local args = {
     [1] = "###",
     [2] = "All"
@@ -106,7 +106,7 @@ local args = {
 
 game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
         end)
-tab4:Button("Pnis", "Chats the word Pnis, which looks like Penis" function()
+tab4:Button("Pnis", "Chats the word Pnis, which looks like Penis", function()
         local args = {
     [1] = "###",
     [2] = "All"
