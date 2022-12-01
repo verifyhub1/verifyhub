@@ -144,7 +144,7 @@ local args = {
 game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
         end)
 tab4:Label("Other")
-tab4:Button("Chat translator", "Translates the chat for you, check the chats messages for more info" function()
+tab4:Button("Chat translator", "Translates the chat for you, check the chats messages for more info", function()
         loadstring(game:HttpGetAsync('https://raw.githubusercontent.com/xxaim/ignore/master/translator.lua'))()
         end)
 local tab3 = win:Tab("Misc", "http://www.roblox.com/asset/?id=6023426915")
