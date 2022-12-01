@@ -143,6 +143,10 @@ local args = {
 
 game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
         end)
+tab4:Label("Other")
+tab4:Button("Chat translator", "Translates the chat for you, check the chats messages for more info" function()
+        loadstring(game:HttpGetAsync('https://raw.githubusercontent.com/xxaim/ignore/master/translator.lua'))()
+        end)
 local tab3 = win:Tab("Misc", "http://www.roblox.com/asset/?id=6023426915")
 tab3:Label("Hat color (CLIENT)")
 tab3:Label("Only you see the hat color. Other players see it as default")
