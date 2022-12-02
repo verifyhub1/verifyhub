@@ -82,7 +82,7 @@ local hatColorInput1 = hatColor:CreateInput({
         end        
     end,
  })
- local Button = hatColor:CreateButton({
+ local hatColorButton1 = hatColor:CreateButton({
     Name = "Reset Color",
     Callback = function()
         for _, hat in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
@@ -90,5 +90,15 @@ local hatColorInput1 = hatColor:CreateInput({
                 hat.Handle.Color = Color3.fromRGB(163, 162, 165)
             end
         end        
+    end,
+ })
+
+
+-- Misc
+
+local miscButton1 = misc:CreateButton({
+    Name = "Execute Infinite Yield + Infinite Store",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Infinite-Store/Infinite-Store/main/main.lua"))()
     end,
  })
