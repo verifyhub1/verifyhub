@@ -8,11 +8,11 @@ if you are using one of these scripts in your hub then please credit me, also cr
 
 # my ui
 ```lua
-loadstring(game:HttpGet('https://raw.githubusercontent.com/Alexplayrus2/verifyhub/main/verifyhub.lua'))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Alexplayrus2/verifyhub/main/ui2.lua'))()
 ```
-# rocords ui
+# rocords ui (cooler looking)
 ```lua
-loadstring(game:HttpGet('https://raw.githubusercontent.com/Alexplayrus2/verifyhub/main/rocordui.lua'))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Alexplayrus2/verifyhub/main/ui1.lua'))()
 ```
 # support
 https://discord.gg/eKRXDQKR55
