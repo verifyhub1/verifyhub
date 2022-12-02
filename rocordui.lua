@@ -38,6 +38,13 @@ local misc = Window:CreateTab("Misc", 4483362458) -- Title, Image
 
 
 local safePara1 = safe:CreateParagraph({Title = "Welcum", Content = "Welcome to VerifyHub"})
+local safePara2 = safe:CreateParagraph({Title = "AlexVR", Content = "a fake vr script, controls can be seen inside the chat"})
+local safeButton2 = safe:CreateButton({
+    Name = "Execute AlexVR",
+    Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Alexplayrus2/verifyhub/main/alexvr.lua'))()
+    end,
+ })
 
 
 -- Annoying
