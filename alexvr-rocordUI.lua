@@ -69,7 +69,7 @@ if vrhat==true then
 if game.Players.LocalPlayer.Character:FindFirstChild("PlaidWrapHat") then
 game.Players.LocalPlayer.Character.PlaidWrapHat.Handle.Mesh:Destroy()
 else
-_G.rocordUI:Notify({
+rocordUI:Notify({
     Title = "AlexVR Error!",
     Content = "You need the plaid green verify hat to use the headset hat!",
     Duration = 12,
@@ -80,7 +80,7 @@ _G.rocordUI:Notify({
 
 end
 end
-_G.rocordUI:Notify({
+rocordUI:Notify({
     Title = "AlexVR Loaded",
     Content = "Hold mouse to raise your hand, press g to dance, c to crouch and t to climb things up, enjoy!",
     Duration = 20,
