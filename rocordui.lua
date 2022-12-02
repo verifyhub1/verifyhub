@@ -38,7 +38,7 @@ local misc = Window:CreateTab("Misc", 4483362458) -- Title, Image
 
 
 local safePara1 = safe:CreateParagraph({Title = "Welcum", Content = "Welcome to VerifyHub"})
-local safePara2 = safe:CreateParagraph({Title = "AlexVR", Content = "a fake vr script, controls can be seen inside the chat"})
+local safePara2 = safe:CreateParagraph({Title = "AlexVR", Content = "a fake vr script, hold mouse to raise your hand, press g to dance, c to crouch and t to climb things up, enjoy!"})
 local safeButton1 = safe:CreateButton({
     Name = "Execute AlexVR",
     Callback = function()
