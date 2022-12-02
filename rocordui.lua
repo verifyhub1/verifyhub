@@ -11,17 +11,17 @@ local Window = rocordUI:CreateWindow({
     },
     Discord = {
        Enabled = false,
-       Invite = "sirius", -- The Discord invite code, do not include discord.gg/
-       RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+       Invite = "nil",
+       RememberJoins = true 
     },
-    KeySystem = false, -- Set this to true to use our key system
+    KeySystem = false,
     KeySettings = {
        Title = "VerifyHub",
        Subtitle = "Key System",
-       Note = "Join the discord (discord.gg/sirius)",
-       FileName = "SiriusKey",
+       Note = "nil",
+       FileName = "Key",
        SaveKey = false,
-       GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+       GrabKeyFromSite = false, 
        Key = "Hello"
     }
  })
@@ -45,12 +45,12 @@ local hatColorInput1 = hatColor:CreateInput({
     Callback = function(Text)
         for _, hat in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
             if hat:IsA("Accessory") then
-                hat.Handle.Color = Text
+                hat.Handle.Color = Color3.fromHex(Text)
             end
         end        
     end,
  })
- local Button = Tab:CreateButton({
+ local Button = hatColor:CreateButton({
     Name = "Reset Color",
     Callback = function()
         for _, hat in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
