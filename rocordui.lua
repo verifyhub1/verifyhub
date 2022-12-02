@@ -34,6 +34,12 @@ local hatColor = Window:CreateTab("Hat Color", 4483362458) -- Title, Image
 local misc = Window:CreateTab("Misc", 4483362458) -- Title, Image
 
 
+-- Safe
+
+
+local safePara1 = safe:CreateParagraph({Title = "Welcum", Content = "Welcome to VerifyHub"})
+
+
 -- Annoying
 
 
