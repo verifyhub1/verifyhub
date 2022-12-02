@@ -10,8 +10,8 @@ local Window = rocordUI:CreateWindow({
        FileName = "SavedConfig"
     },
     Discord = {
-       Enabled = false,
-       Invite = nil,
+       Enabled = true,
+       Invite = "SjSgvxNNtE",
        RememberJoins = true 
     },
     KeySystem = false,
