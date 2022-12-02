@@ -1,5 +1,5 @@
 getgenv().SecureMode = true
-local rocordUI = loadstring(game:HttpGet('https://raw.githubusercontent.com/rocord01/rocordUI/main/loader.lua'))()
+local rocordUI = loadstring(game:HttpGet('https://rocord.dev/cdn/apps/rocordUI/loader'))()
 local Window = rocordUI:CreateWindow({
     Name = "VerifyHub",
     LoadingTitle = "VerifyHub Loading...",
