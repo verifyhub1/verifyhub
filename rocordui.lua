@@ -39,10 +39,17 @@ local misc = Window:CreateTab("Misc", 4483362458) -- Title, Image
 
 local safePara1 = safe:CreateParagraph({Title = "Welcum", Content = "Welcome to VerifyHub"})
 local safePara2 = safe:CreateParagraph({Title = "AlexVR", Content = "a fake vr script, controls can be seen inside the chat"})
-local safeButton2 = safe:CreateButton({
+local safeButton1 = safe:CreateButton({
     Name = "Execute AlexVR",
     Callback = function()
         loadstring(game:HttpGet('https://raw.githubusercontent.com/Alexplayrus2/verifyhub/main/alexvr-rocordUI.lua'))()
+    end,
+ })
+local safePara3 = safe:CreateParagraph({Title = "Headcrab Hat", Content = "Gives you a headcrab looking hat, you need to be wearing the following clothing items: Jade Necklace with Shell Pendant (free, ID 376527115), Roblox Logo Visor (free, ID 607700713), 'Verified, Bonafide, Plaidafied' (verify your email, ID 102611803)"})
+local safeButton2 = safe:CreateButton({
+    Name = "Execute Headcrab Hat",
+    Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Alexplayrus2/verifyhub/main/headcraphat.lua'))()
     end,
  })
 
