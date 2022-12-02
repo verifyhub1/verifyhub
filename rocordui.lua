@@ -27,11 +27,11 @@ local Window = rocordUI:CreateWindow({
  })
 -- Create tabs
 
-local safe = Window:CreateTab("Safe", 4335489540) -- Title, Image
-local annoying = Window:CreateTab("Annoying", 3944693380) -- Title, Image
-local chat = Window:CreateTab("Chat", 4370314218) -- Title, Image
-local hatColor = Window:CreateTab("Hat Color", 6961018899) -- Title, Image
-local misc = Window:CreateTab("Misc", 4483364243) -- Title, Image
+local safe = Window:CreateTab("Safe", 4335489513) -- Title, Image
+local annoying = Window:CreateTab("Annoying", 3944693371) -- Title, Image
+local chat = Window:CreateTab("Chat", 4370314188) -- Title, Image
+local hatColor = Window:CreateTab("Hat Color", 6961018885) -- Title, Image
+local misc = Window:CreateTab("Misc", 4483364237) -- Title, Image
 
 
 -- Safe
