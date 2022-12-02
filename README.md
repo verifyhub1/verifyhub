@@ -14,4 +14,6 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/Alexplayrus2/verifyhu
 ```lua
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Alexplayrus2/verifyhub/main/rocordui.lua'))()
 ```
+# support
+https://discord.gg/eKRXDQKR55
 # have fun exploiting!
