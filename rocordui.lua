@@ -11,7 +11,7 @@ local Window = rocordUI:CreateWindow({
     },
     Discord = {
        Enabled = false,
-       Invite = "nil",
+       Invite = nil,
        RememberJoins = true 
     },
     KeySystem = false,
@@ -38,7 +38,7 @@ local misc = Window:CreateTab("Misc", 4483362458) -- Title, Image
 
 
 local annoyingPara1 = annoying:CreateParagraph({Title = "Penis Giver", Content = "Penis Giver will place a penis model on the players you hold Mouse1 on. It is client only meaning only you can see it. You will need to leave the game to deactivate it."})
-local annoyingButton1 = Tab:CreateButton({
+local annoyingButton1 = annoying:CreateButton({
     Name = "Activate Penis Giver",
     Callback = function()
         loadstring(game:HttpGet('https://raw.githubusercontent.com/Alexplayrus2/verifyhub/main/penis.lua'))()
