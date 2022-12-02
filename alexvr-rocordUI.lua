@@ -69,21 +69,16 @@ if vrhat==true then
 if game.Players.LocalPlayer.Character:FindFirstChild("PlaidWrapHat") then
 game.Players.LocalPlayer.Character.PlaidWrapHat.Handle.Mesh:Destroy()
 else
-rocordUI:Notify({
-    Title = "AlexVR Error!",
-    Content = "You need the plaid green verify hat to use the headset hat!",
-    Duration = 12,
-    Image = 4483362458,
-    Actions = {},
- })
+game:GetService("StarterGui"):SetCore("SendNotification",{
+	Title = "AlexVR Error!",
+	Text = "You need the plaid green verify hat to use the headset hat!",
+	Icon = "rbxassetid://4370336735"
+})
 
 
 end
 end
-rocordUI:Notify({
-    Title = "AlexVR Loaded",
-    Content = "Hold mouse to raise your hand, press g to dance, c to crouch and t to climb things up, enjoy!",
-    Duration = 20,
-    Image = 4370336735,
-    Actions = {},
- })
+game:GetService("StarterGui"):SetCore("SendNotification",{
+	Title = "AlexVR Loaded",
+	Text = "See script hub for controls",
+})
