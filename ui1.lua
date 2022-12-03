@@ -57,7 +57,7 @@ local safeButton2 = safe:CreateButton({
 -- Annoying
 
 
-local annoyingPara1 = annoying:CreateParagraph({Title = "Penis Giver", Content = "Penis Giver will place a penis model on the players you hold Mouse1 on. It is client only meaning only you can see it. You will need to leave the game to deactivate it."})
+local annoyingPara1 = annoying:CreateParagraph({Title = "Penis Giver", Content = "Penis Giver will place a penis model on the players you hold Mouse1 on by rapidly teleporting to them and blockifying a necklace hat. Required hats: Jade Necklace with Shell Pendant (free, ID 376527115)"})
 local annoyingButton1 = annoying:CreateButton({
     Name = "Activate Penis Giver",
     Callback = function()
