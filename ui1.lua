@@ -26,7 +26,7 @@ local Window = rocordUI:CreateWindow({
     }
  })
 -- Create tabs
-
+local credits = Window:CreateTab("Credits", 4483362748) -- Title, Image
 local safe = Window:CreateTab("Safe", 4335489513) -- Title, Image
 local annoying = Window:CreateTab("Annoying", 3944693371) -- Title, Image
 local chat = Window:CreateTab("Chat", 4370314188) -- Title, Image
@@ -34,22 +34,35 @@ local hatColor = Window:CreateTab("Hat Color", 6961018885) -- Title, Image
 local misc = Window:CreateTab("Misc", 4483364237) -- Title, Image
 
 
+-- Credits
+
+
+local creditsLabel1 = credits:CreateLabel("Welcum To VerifyHub")
+local creditsPara1 = credits:CreateParagraph({Title = "Credits", Content = "This UI: rocord#0001\nAlexVR, Headcrab Hat, Penis Giver, Hat Color Changer, AutoToxic: Alexplayrus1#0746\nSnake Transform: MyWorld#4430"})
+
+
 -- Safe
 
 
-local safePara1 = safe:CreateParagraph({Title = "Welcum", Content = "Welcome to VerifyHub"})
-local safePara2 = safe:CreateParagraph({Title = "AlexVR", Content = "a fake vr script, hold mouse to raise your hand, press g to dance, c to crouch and t to climb things up, enjoy!"})
+local safePara1 = safe:CreateParagraph({Title = "AlexVR", Content = "a fake vr script, hold mouse to raise your hand, press g to dance, c to crouch and t to climb things up, enjoy!"})
 local safeButton1 = safe:CreateButton({
     Name = "Execute AlexVR",
     Callback = function()
         loadstring(game:HttpGet('https://raw.githubusercontent.com/verifyhub1/verifyhub/main/alexvr.lua'))()
     end,
  })
-local safePara3 = safe:CreateParagraph({Title = "Headcrab Hat", Content = "Gives you a headcrab looking hat, you need to be wearing the following clothing items: Jade Necklace with Shell Pendant (free, ID 376527115), Roblox Logo Visor (free, ID 607700713), 'Verified, Bonafide, Plaidafied' (verify your email, ID 102611803). You will see 'Callback Error' below if you aren't wearing these hats."})
+local safePara2 = safe:CreateParagraph({Title = "Headcrab Hat", Content = "Gives you a headcrab looking hat, you need to be wearing the following clothing items: Jade Necklace with Shell Pendant (free, ID 376527115), Roblox Logo Visor (free, ID 607700713), 'Verified, Bonafide, Plaidafied' (verify your email, ID 102611803). You will see 'Callback Error' below if you aren't wearing these hats."})
 local safeButton2 = safe:CreateButton({
     Name = "Execute Headcrab Hat",
     Callback = function()
         loadstring(game:HttpGet('https://raw.githubusercontent.com/verifyhub1/verifyhub/main/headcraphat.lua'))()
+    end,
+ })
+ local safePara3 = safe:CreateParagraph({Title = "Snake Transform", Content = "Transforms your character into a ragdoll snake. Works on FE meaning other people can see it."})
+local safeButton3 = safe:CreateButton({
+    Name = "Execute Snake Transform",
+    Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/verifyhub1/verifyhub/main/snake.lua'))()
     end,
  })
 
