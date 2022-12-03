@@ -143,6 +143,12 @@ local args = {
 
 game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
         end)
+tab4:Label("Auto toxic")
+tab4:Label("You cant stop it unless you rejoin")
+tab4:Button("Auto Toxic", "Automatically acts toxic in the chat for you", function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/verifyhub1/verifyhub/main/autotoxic.lua'))()
+        Flux:Notification("Auto toxic has been started, rejoin to stop it", "OK")
+        end)
 local tab3 = win:Tab("Misc", "http://www.roblox.com/asset/?id=6023426915")
 tab3:Label("Hat color (CLIENT)")
 tab3:Label("Only you see the hat color. Other players see it as default")
