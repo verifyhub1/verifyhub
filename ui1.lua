@@ -42,14 +42,14 @@ local safePara2 = safe:CreateParagraph({Title = "AlexVR", Content = "a fake vr s
 local safeButton1 = safe:CreateButton({
     Name = "Execute AlexVR",
     Callback = function()
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/Alexplayrus2/verifyhub/main/alexvr.lua'))()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/verifyhub1/verifyhub/main/alexvr.lua'))()
     end,
  })
 local safePara3 = safe:CreateParagraph({Title = "Headcrab Hat", Content = "Gives you a headcrab looking hat, you need to be wearing the following clothing items: Jade Necklace with Shell Pendant (free, ID 376527115), Roblox Logo Visor (free, ID 607700713), 'Verified, Bonafide, Plaidafied' (verify your email, ID 102611803). You will see 'Callback Error' below if you aren't wearing these hats."})
 local safeButton2 = safe:CreateButton({
     Name = "Execute Headcrab Hat",
     Callback = function()
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/Alexplayrus2/verifyhub/main/headcraphat.lua'))()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/verifyhub1/verifyhub/main/headcraphat.lua'))()
     end,
  })
 
@@ -61,7 +61,7 @@ local annoyingPara1 = annoying:CreateParagraph({Title = "Penis Giver", Content =
 local annoyingButton1 = annoying:CreateButton({
     Name = "Activate Penis Giver",
     Callback = function()
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/Alexplayrus2/verifyhub/main/penis.lua'))()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/verifyhub1/verifyhub/main/penis.lua'))()
     end,
  })
 
