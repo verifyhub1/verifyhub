@@ -44,21 +44,21 @@ local creditsPara1 = credits:CreateParagraph({Title = "Credits", Content = "This
 -- Safe
 
 
-local safePara1 = safe:CreateParagraph({Title = "AlexVR", Content = "a fake vr script, hold mouse to raise your hand, press g to dance, c to crouch and t to climb things up, enjoy!"})
+local safePara1 = safe:CreateParagraph({Title = "AlexVR", Content = "a fake vr script, hold mouse to raise your hand, press g to dance, c to crouch and t to climb things up, enjoy! Stop AlexVR by resetting your character."})
 local safeButton1 = safe:CreateButton({
     Name = "Execute AlexVR",
     Callback = function()
         loadstring(game:HttpGet('https://raw.githubusercontent.com/verifyhub1/verifyhub/main/alexvr.lua'))()
     end,
  })
-local safePara2 = safe:CreateParagraph({Title = "Headcrab Hat", Content = "Gives you a headcrab looking hat, you need to be wearing the following clothing items: Jade Necklace with Shell Pendant (free, ID 376527115), Roblox Logo Visor (free, ID 607700713), 'Verified, Bonafide, Plaidafied' (verify your email, ID 102611803). You will see 'Callback Error' below if you aren't wearing these hats."})
+local safePara2 = safe:CreateParagraph({Title = "Headcrab Hat", Content = "Gives you a headcrab looking hat, you need to be wearing the following clothing items: Jade Necklace with Shell Pendant (free, ID 376527115), Roblox Logo Visor (free, ID 607700713), 'Verified, Bonafide, Plaidafied' (verify your email, ID 102611803). You will see 'Callback Error' below if you aren't wearing these hats. Stop Headcrab Hat by resetting your character."})
 local safeButton2 = safe:CreateButton({
     Name = "Execute Headcrab Hat",
     Callback = function()
         loadstring(game:HttpGet('https://raw.githubusercontent.com/verifyhub1/verifyhub/main/headcraphat.lua'))()
     end,
  })
- local safePara3 = safe:CreateParagraph({Title = "Snake Transform", Content = "Transforms your character into a ragdoll snake. Works on FE meaning other people can see it."})
+ local safePara3 = safe:CreateParagraph({Title = "Snake Transform", Content = "Transforms your character into a ragdoll snake. Works on FE meaning other people can see it. Stop Snake Transform by leaving the game."})
 local safeButton3 = safe:CreateButton({
     Name = "Execute Snake Transform",
     Callback = function()
@@ -70,7 +70,7 @@ local safeButton3 = safe:CreateButton({
 -- Annoying
 
 
-local annoyingPara1 = annoying:CreateParagraph({Title = "Penis Giver", Content = "Penis Giver will place a penis model on the players you hold Mouse1 on by rapidly teleporting to them and blockifying a necklace hat. Required hats: Jade Necklace with Shell Pendant (free, ID 376527115)"})
+local annoyingPara1 = annoying:CreateParagraph({Title = "Penis Giver", Content = "Penis Giver will place a penis model on the players you hold Mouse1 on by rapidly teleporting to them and blockifying a necklace hat. Required hats: Jade Necklace with Shell Pendant (free, ID 376527115). Stop Penis Giver by resetting your character."})
 local annoyingButton1 = annoying:CreateButton({
     Name = "Activate Penis Giver",
     Callback = function()
@@ -79,10 +79,22 @@ local annoyingButton1 = annoying:CreateButton({
  })
 
 
+-- Chat
+
+
+local chatPara1 = chat:CreateParagraph({Title = "AutoToxic", Content = "AutoToxic will spam the chat with toxic quotes and will say 'its just lag' if someone says 'hacker'. Stop AutoToxic by leaving the game."})
+local chatButton1 = chat:CreateButton({
+    Name = "Activate AutoToxic",
+    Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/verifyhub1/verifyhub/main/autotoxic.lua'))()
+    end,
+ })
+
+
 -- Hat Color
 
 
-local hatColorPara1 = hatColor:CreateParagraph({Title = "Information", Content = "Hat Color is client only meaning only you can see it, and other players will see it as the default roblox item."})
+local hatColorPara1 = hatColor:CreateParagraph({Title = "Information", Content = "Hat Color is client only meaning only you can see it, and other players will see it as the default roblox item. Stop Hat Color by clicking the 'Reset Color' button below."})
 local hatColorColorPicker1 = hatColor:CreateColorPicker({
     Name = "Hat Color Picker",
     Color = Color3.fromRGB(255,255,255),
