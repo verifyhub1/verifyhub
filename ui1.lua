@@ -70,18 +70,18 @@ local annoyingButton1 = annoying:CreateButton({
 
 
 local hatColorPara1 = hatColor:CreateParagraph({Title = "Information", Content = "Hat Color is client only meaning only you can see it, and other players will see it as the default roblox item."})
-local hatColorInput1 = hatColor:CreateInput({
-    Name = "Hat Color (Hex)",
-    PlaceholderText = "#ffffff",
-    RemoveTextAfterFocusLost = false,
-    Callback = function(Text)
+local hatColorColorPicker1 = hatColor:CreateColorPicker({
+    Name = "Hat Color Picker",
+    Color = Color3.fromRGB(255,255,255),
+    Flag = "HatColor",
+    Callback = function(Value)
         for _, hat in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
             if hat:IsA("Accessory") then
-                hat.Handle.Color = Color3.fromHex(Text)
+                hat.Handle.Color = Value
             end
-        end        
-    end,
- })
+        end 
+    end
+})
  local hatColorButton1 = hatColor:CreateButton({
     Name = "Reset Color",
     Callback = function()
