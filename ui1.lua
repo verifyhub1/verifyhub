@@ -58,7 +58,7 @@ local safeButton2 = safe:CreateButton({
         loadstring(game:HttpGet('https://raw.githubusercontent.com/verifyhub1/verifyhub/main/headcraphat.lua'))()
     end,
  })
- local safePara3 = safe:CreateParagraph({Title = "Snake Transform", Content = "Transforms your character into a ragdoll snake. Works on FE meaning other people can see it. Stop Snake Transform by leaving the game."})
+ local safePara3 = safe:CreateParagraph({Title = "Snake Transform", Content = "Transforms your character into a ragdoll snake. Works on FE meaning other people can see it. Stop Snake Transform by resetting your character."})
 local safeButton3 = safe:CreateButton({
     Name = "Execute Snake Transform",
     Callback = function()
