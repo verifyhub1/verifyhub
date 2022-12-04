@@ -6,7 +6,7 @@ local Window = rocordUI:CreateWindow({
     LoadingSubtitle = "UI by rocord#0001 and scripts by Alexplayrus1#0746",
     ConfigurationSaving = {
        Enabled = true,
-       FolderName = "VerifyHub", -- Create a custom folder for your hub/game
+       FolderName = "VerifyHub", 
        FileName = "SavedConfig"
     },
     Discord = {
@@ -65,6 +65,13 @@ local safeButton3 = safe:CreateButton({
         loadstring(game:HttpGet('https://raw.githubusercontent.com/verifyhub1/verifyhub/main/snake.lua'))()
     end,
  })
+ local safePara4 = safe:CreateParagraph({Title = "Default Animations Rewrite", Content = "Replaces your default roblox character animations with custom-written animations. Stop Default Animations Rewrite by resetting your character."})
+local safeButton4 = safe:CreateButton({
+    Name = "Execute Default Animations Rewrite",
+    Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/verifyhub1/verifyhub/main/animoverwrite.lua'))()
+    end,
+})
 
 
 -- Annoying
