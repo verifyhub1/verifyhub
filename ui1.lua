@@ -14,15 +14,15 @@ local Window = rocordUI:CreateWindow({
        Invite = "SjSgvxNNtE",
        RememberJoins = true 
     },
-    KeySystem = false,
+    KeySystem = true,
     KeySettings = {
        Title = "VerifyHub",
        Subtitle = "Key System",
-       Note = "nil",
+       Note = "Join the discord and verify your user to unlock the script!",
        FileName = "Key",
        SaveKey = false,
-       GrabKeyFromSite = false, 
-       Key = "Hello"
+       GrabKeyFromSite = true, 
+       Key = "https://rocord.dev/keysystem/verifyhub.php"
     }
  })
 -- Create tabs
