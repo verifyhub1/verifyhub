@@ -1,4 +1,4 @@
-local quotes = {"imao imagine not having a good gaming chair like me - eKRXDQKR55", "im a cheater? no i just have a good gaming chair stay mad lol - eKRXDQKR55", "cry some more - eKRXDQKR55", "i got good crocs, unlike you - eKRXDQKR55"}
+local quotes = {"imao imagine not having a good gaming chair like me - eKRXDQKR55", "im a cheater? no i just have a good gaming chair stay mad lol - eKRXDQKR55", "cry some more - eKRXDQKR55", "i got good crocs, unlike you - eKRXDQKR55", "verifyhub on top - eKRXDQKR55", "get better - eKRXDQKR55", "trash - eKRXDQKR55", "stay mad - eKRXDQKR55"}
 function chattoxicquotes()
 while true do
 local args = {
