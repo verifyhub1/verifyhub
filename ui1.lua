@@ -22,7 +22,7 @@ local Window = rocordUI:CreateWindow({
        FileName = "Key",
        SaveKey = false,
        GrabKeyFromSite = true, 
-       Key = "https://rocord.dev/keysystem/verifyhub.php"
+       Key = "https://rocord.dev/keysystem/verifyhub/"
     }
  })
 -- Create tabs
