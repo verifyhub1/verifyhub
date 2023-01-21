@@ -44,7 +44,7 @@ local creditsPara1 = credits:CreateParagraph({Title = "Credits", Content = "This
 -- Safe
 
 
-local safePara1 = safe:CreateParagraph({Title = "AlexVR", Content = "a fake vr script, hold mouse to raise your hand, press g to dance, c to crouch and t to climb things up, enjoy! Required hats: 'Verified, Bonafide, Plaidafied' (verify your email, ID 102611803) Stop AlexVR by resetting your character."})
+local safePara1 = safe:CreateParagraph({Title = "AlexVR", Content = "a fake vr script, hold mouse to raise your hand, press g to dance, c to crouch and t to climb things up, hold your mouse on unanchored parts (not players) to grab them, enjoy! Required hats: 'Verified, Bonafide, Plaidafied' (verify your email, ID 102611803) Stop AlexVR by resetting your character."})
 local safeButton1 = safe:CreateButton({
     Name = "Execute AlexVR",
     Callback = function()
