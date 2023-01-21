@@ -17,14 +17,33 @@ local crouch=plr.Character.Humanoid:LoadAnimation(crouchanim)
 local point=plr.Character.Humanoid:LoadAnimation(pointanim)
 local mouse=plr:GetMouse()
 local char=plr.Character
+sethiddenproperty(plr, "MaxSimulationRadius", math.huge)
+sethiddenproperty(plr, "SimulationRadius", math.huge)
 plr.CameraMode=Enum.CameraMode.LockFirstPerson
 mouse1d = mouse.Button1Down:Connect(function()
 point:AdjustSpeed(1)
 point:Play()
+if mouse.Target and mouse.Target.Anchored == false then
+    if not mouse.Target:FindFirstChildOfClass("BodyPosition") then
+bodypos = Instance.new("BodyPosition")
+bodypos.MaxForce = Vector3.new(math.huge, math.huge, math.huge)
+bodypos.Parent=mouse.Target
+bodypos.Position = char:FindFirstChild("Right Arm").Position
+    else
+        mouse.Target:FindFirstChildOfClass("BodyPosition"):Destroy()
+        bodypos = Instance.new("BodyPosition")
+bodypos.MaxForce = Vector3.new(math.huge, math.huge, math.huge)
+bodypos.Parent=mouse.Target
+bodypos.Position = char:FindFirstChild("Right Arm").Position
+    end
+end
 end)
 mouse1u = mouse.Button1Up:Connect(function()
 point:AdjustSpeed(1)
 point:Stop()
+if bodypos then
+    bodypos.Position = mouse.Hit.p
+end
 end)
 runservice=game:GetService("RunService")
 local cock = runservice.RenderStepped:Connect(function()
