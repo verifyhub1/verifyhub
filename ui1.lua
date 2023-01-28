@@ -42,6 +42,13 @@ local function chatMultiLine(messages, numOfTimes)
         end
     end
 end
+local function newLineSeperate(array)
+    local resultString = ""
+    for _, item in pairs(array) do
+        resultString = resultString .. item .. "/n"
+    end
+    return resultString
+end
 
 
 -- Credits
