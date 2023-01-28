@@ -39,7 +39,12 @@ local misc = Window:CreateTab("Misc", 4483364237) -- Title, Image
 
 local creditsLabel1 = credits:CreateLabel("Welcum To VerifyHub")
 local creditsPara1 = credits:CreateParagraph({Title = "Credits", Content = "This UI: rocord#0001\nAlexVR, Headcrab Hat, Penis Giver, Hat Color Changer, AutoToxic: Alexplayrus1#0746\nSnake Transform: MyWorld#4430"})
-
+local creditsButton1 = credits:CreateButton({
+    Name = "Destroy UI",
+    Callback = function()
+        rocordUI:Destroy()
+    end,
+})
 
 -- Safe
 
