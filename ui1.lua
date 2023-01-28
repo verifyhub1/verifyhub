@@ -33,6 +33,16 @@ local chat = Window:CreateTab("Chat", 4370314188) -- Title, Image
 local hatColor = Window:CreateTab("Hat Color", 6961018885) -- Title, Image
 local misc = Window:CreateTab("Misc", 4483364237) -- Title, Image
 
+-- function gaming
+local function chatMultiLine(messages, numOfTimes)
+    for i = 1, numOfTimes do
+        for _, message in ipairs(messages) do
+            game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(message, "All")
+            wait(0.3)
+        end
+    end
+end
+
 
 -- Credits
 
