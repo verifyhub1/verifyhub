@@ -53,6 +53,9 @@ end
 
 -- Credits
 
+-- jobid/placeid stuff
+local creditsJobID = credits:CreateSection("Job ID: " .. game.JobId)
+local creditsPlaceID = credits:CreateSection("Place ID: " .. game.PlaceId)
 
 local creditsLabel1 = credits:CreateLabel("Welcum To VerifyHub")
 local creditsPara1 = credits:CreateParagraph({Title = "Credits", Content = "This UI: rocord#0001\nAlexVR, Headcrab Hat, Penis Giver, Hat Color Changer, AutoToxic: Alexplayrus1#0746\nSnake Transform: MyWorld#4430"})
