@@ -8,7 +8,11 @@ Only the current version of VerifyHub will be accepted for security reports.
 
 How to report a vulnerability:
 
-Please do **NOT** make a Github issue. Please contact either `Alexplayrus1` or `rocord01` personally.
+Please do **NOT** make a Github issue. 
+
+Use the built in github [feature](https://docs.github.com/en/code-security/security-advisories/guidance-on-reporting-and-writing/privately-reporting-a-security-vulnerability)
+
+Or either contact either `Alexplayrus1` or `rocord01` personally.
 Below you can find the contact details.
 
 **rocord01**
