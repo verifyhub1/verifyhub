@@ -27,9 +27,11 @@ local Window = rocordUI:CreateWindow({
  })
 -- Create tabs
 local credits = Window:CreateTab("Credits", 4483362748) -- Title, Image
-local safe = Window:CreateTab("Safe", 4335489513) -- Title, Image
-local annoying = Window:CreateTab("Annoying", 3944693371) -- Title, Image
-local chat = Window:CreateTab("Chat", 4370314188) -- Title, Image
+
+local safe = Window:CreateTab("Scripts - Safe", 4335489513) -- Title, Image
+local annoying = Window:CreateTab("Scripts - Annoying", 3944693371) -- Title, Image
+local chat = Window:CreateTab("Scripts - Chat", 4370314188) -- Title, Image
+local utils = Window:CreateTab("Utilities", 4400700924) -- Title, Image
 local hatColor = Window:CreateTab("Hat Color", 6961018885) -- Title, Image
 local misc = Window:CreateTab("Misc", 4483364237) -- Title, Image
 
@@ -43,12 +45,13 @@ local function chatMultiLine(messages, numOfTimes)
     end
 end
 local function newLineSeperate(array)
-    local resultString = ""
-    for _, item in pairs(array) do
-        resultString = resultString .. item .. "/n"
+    local myString = ""
+    for _, item in ipairs(array) do
+      myString = myString .. item .. "\n"
     end
-    return resultString
-end
+    myString = string.sub(myString, 1, -2)
+    return myString
+  end
 
 
 -- Credits
@@ -119,6 +122,17 @@ local chatButton1 = chat:CreateButton({
     Name = "Activate AutoToxic",
     Callback = function()
         loadstring(game:HttpGet('https://raw.githubusercontent.com/verifyhub1/verifyhub/main/autotoxic.lua'))()
+    end,
+ })
+
+-- Utilities
+
+local utilsInput1 = utils:CreateInput({
+    Name = "Workspace Gravity",
+    PlaceholderText = "196.2",
+    RemoveTextAfterFocusLost = false,
+    Callback = function(Text)
+        Workspace.Gravity = Text
     end,
  })
 
