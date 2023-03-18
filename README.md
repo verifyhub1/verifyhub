@@ -12,12 +12,12 @@ join our discord: https://discord.gg/eKRXDQKR55
 
 ### rocords ui
 ```lua
-loadstring(game:HttpGet('https://raw.githubusercontent.com/verifyhub1/verifyhub/main/ui1.lua'))()
+loadstring(game:HttpGet('https://cdn.verifyhub.tech/ui1.lua'))()
 ```
 
 ### my ui
 ```lua
-loadstring(game:HttpGet('https://raw.githubusercontent.com/verifyhub1/verifyhub/main/ui2.lua'))()
+loadstring(game:HttpGet('https://cdn.verifyhub.tech/ui2.lua'))()
 ```
 ## support
 https://discord.gg/eKRXDQKR55
